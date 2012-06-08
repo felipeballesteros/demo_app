@@ -4,6 +4,7 @@ gem 'rails', '3.2.5'
 
 group :development do
   gem 'sqlite3', '1.3.5'
+  gem 'rspec-rails',      ">= 2.0.0.beta"
 end
 
 
@@ -20,6 +21,11 @@ gem 'jquery-rails', '2.0.0'
 
 group :production do
   gem 'pg', '0.12.2'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'launchy'
 end
 
 # To use ActiveModel has_secure_password
