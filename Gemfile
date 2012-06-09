@@ -3,8 +3,10 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.5'
 
 group :development do
-  gem 'sqlite3', '1.3.5'
+  #gem 'sqlite3', '1.3.5' --> removed to use PostgreSQL instead of SQLite
   gem 'rspec-rails',      ">= 2.0.0.beta"
+  gem 'pg', '0.12.2' #-> added to use PostgreSQL instead of SQLite
+  gem 'guard-rspec', '0.5.5'
 end
 
 
@@ -26,6 +28,8 @@ end
 group :test do
   gem 'capybara'
   gem 'launchy'
+  gem 'rb-fsevent', '0.4.3.1', :require => false
+  gem 'growl', '1.0.3'
 end
 
 # To use ActiveModel has_secure_password
