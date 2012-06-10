@@ -3,10 +3,10 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.5'
 
 group :development do
-  #gem 'sqlite3', '1.3.5' --> removed to use PostgreSQL instead of SQLite
+  gem 'sqlite3', '1.3.5' #--> removed if to use PostgreSQL instead of SQLite
   gem 'rspec-rails',      ">= 2.0.0.beta"
-  gem 'pg', '0.12.2' #-> added to use PostgreSQL instead of SQLite
-  gem 'guard-rspec', '0.5.5'
+  #gem 'pg', '0.12.2' #-> added if to use PostgreSQL instead of SQLite
+  #gem 'guard-rspec', '0.5.5'
 end
 
 
