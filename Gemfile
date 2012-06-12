@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.5'
+gem 'bootstrap-sass', '2.0.0'
 
 group :development do
   gem 'sqlite3', '1.3.5' #--> removed if to use PostgreSQL instead of SQLite
   gem 'rspec-rails',      ">= 2.0.0.beta"
   #gem 'pg', '0.12.2' #-> added if to use PostgreSQL instead of SQLite
-  #gem 'guard-rspec', '0.5.5'
+  gem 'guard-rspec', '0.5.5'
 end
 
 
